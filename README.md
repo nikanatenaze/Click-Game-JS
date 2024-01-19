@@ -1,2 +1,3 @@
-# Click-Game-JS
-Click game, this is game when you click your balance gain. you can buy upgrades too. that is like simulator or something like. made with Java script, Html and Css
+# Click Game JS | How to play?
+You clicking a button named Eearn money(first button), and at start you earning 1₾ per click. to get more earnings yon will buy upgrades.
+to show upgrades u will click upgrades button, spend button per click -1₾ and restart game button restarts game. that is all.

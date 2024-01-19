@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    backdrop-filter: blur(20px);
+    position: absolute;
+    z-index: 1000;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-div {
+    animation: animation 0.50s;
+    width: 400px;
+    height: 483px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.409);
+}
+
+.balance {
+    
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 125, 214);
+    border-radius: 5px;
+    width: 80%;
+    height: 55px;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    right: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.bal {
+    position: relative;
+    left: 10px;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.earn-btn {
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgb(212, 13, 13);
+    border: none;
+}
+
+.earning {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17.3px;
+}
+
+.credits {
+    margin-top: 20px;
+    gap: 10px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Credits-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.credits-ul {
+    display: flex;
+    gap: 20px;
+    font-size: 35px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.fa-github {
+    transition: 0.3s all ease;
+    color: black;
+}
+
+.fa-github:hover {
+    color: rgb(35, 35, 35);
+}
+
+.fa-instagram {
+    transition: 0.3s all ease;
+    color: rgb(152, 22, 43);
+}
+
+.fa-instagram:hover {
+    color: rgb(198, 42, 68);
+}
+
+.fa-discord {
+    transition: 0.3s all ease;
+    color: rgb(66, 12, 182);
+}
+
+.fa-discord:hover {
+    color: rgb(92, 41, 201);
+}
+
+.fa-user {
+    transition: 0.3s all ease;
+    color: rgb(135, 49, 161);
+}
+
+.fa-user:hover {
+    color: rgb(161, 62, 191);
+}
+
+.clear {
+    background-image: radial-gradient(circle, #00f47f, #30f472, #47f364, #59f354, #69f243);
+}
+
+.upg {
+    background-image: radial-gradient(circle, #16e7e6, #00d0e2, #00b9d9, #00a1cc, #1c8abb);
+}
+
+.gel {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    right: 100px;
+}
+
+/* Upgrade */
+
+.upgrade {
+    animation: animation 0.75s;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.409);
+    border-radius: 25px;
+    display: none;
+    transition: 0.3s all ease;
+    transition: cubic-bezier(1, 0, 0, 1) ;
+    flex-direction: column;
+    width: 300px;
+    height: 483px;
+    background-color: white;
+}
+
+.proudcts-ul {
+    width: 100%;
+    list-style: none;
+    font-size: 20px;
+    margin-left: 12px;
+    margin-top: 7px;
+}
+
+.proudcts-ul-li {
+    margin-top: 3px;
+}
+
+.psa {
+    margin-top: 20px;
+}
+
+.Autoclicker-btn {
+    font-size: 30px;
+    height: 100%;
+    border: 1px solid;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.buybutton {
+    position: relative;
+    left: 10px;
+    font-size: 20px;
+    padding: 3px 10px 3px 10px;
+}
+
+.button-x {
+    cursor: pointer;
+    margin-top: 3px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    height: 50px;
+    background-color: rgb(215, 24, 24);
+    transition: 0.3s all ease;
+    border: none;
+    font-size: 24px;
+}
+
+.button-x:hover {
+    background-color: red;
+}
+
+.buybutton {
+    background-color: rgb(2, 221, 2);
+    color: white;
+    margin-top: 2px;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.asd {
+    transition: 0.1s all ease;
+    background-color: rgb(233, 151, 0);
+}
+
+.asd:hover {
+    background-color: rgb(249, 172, 27);
+}
+
+.bcd {
+    transition: 0.1s all ease;
+}
+
+.bcd:hover {
+    background-color: rgb(249, 8, 8);
+}
+
+.page {
+    background-image: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: c;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+        transform: rotateX('-10deg');
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .game {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

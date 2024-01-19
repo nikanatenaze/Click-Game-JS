@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./indexdesign.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <!----------------------------------------------------------->
+    <title>Click Game</title>
+</head>
+<body>
+    <section class="page">
+        <div class="game">
+            <div class="game-div">
+                <div class="balance">
+                    <p id="balance-js" class="bal"></p>
+                    <p class="text">Balance ₾</p>
+                </div>
+                <p id="earning" class="earning"></p>
+                <div class="buttons">
+                    <button id="earns" class="earn-btn clear" onclick="earn(),checkbalance()">Click to Earn <i class="fa-solid fa-money-bill-1-wave"></i></button>
+                    <button id="openupg" class="earn-btn upg" onclick="openupgrade()">Upgrades Shop <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="earn-btn bcd" onclick="discount(),checkbalance()">Spend Money <i class="fa-solid fa-caret-down"></i></button>
+                    <button class="earn-btn asd" onclick="restart(),checkbalance()">Restart Game <i class="fa-solid fa-retweet"></i></button>
+                </div>
+                <div class="credits">
+                    <p class="Credits-text">Credits:</p>
+                    <ul class="credits-ul">
+                        <li class="credits-list"><a target="_blank" href="https://github.com/nikanatenaze"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="credits-list"><a target="_blank" href="https://www.facebook.com/profile.php?id=100022324145453"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="credits-list"><a target="_blank" href="'nikanatenaze'"><i class="fa-brands fa-discord"></i></a></li>
+                        <li class="credits-list"><a target="_blank" href="https://www.facebook.com/profile.php?id=100022324145453"><i class="fa-solid fa-user"></i></a></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="upgrade" class="upgrade">
+                <ul class="proudcts-ul">
+                    <li class="proudcts-ul-li">Buy <span>1</span>₾ income: <button class="buybutton" onclick="addprice(1,50), pay(50), updateearn()">50₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>5</span>₾ income: <button class="buybutton" onclick="addprice(5,250), pay(250), updateearn()">250₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>10</span>₾ income: <button class="buybutton" onclick="addprice(10,600), pay(600), updateearn()">600₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>15</span>₾ income: <button class="buybutton" onclick="addprice(15,1000), pay(1000), updateearn()">1000₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>20</span>₾ income: <button class="buybutton" onclick="addprice(20,1400), pay(1400), updateearn()">1400₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>40</span>₾ income: <button class="buybutton" onclick="addprice(40,3000), pay(3000), updateearn()">3000₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>60</span>₾ income: <button class="buybutton" onclick="addprice(60,5500), pay(5500), updateearn()">5500₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>80</span>₾ income: <button class="buybutton" onclick="addprice(80,8000), pay(8000), updateearn()">8000₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>100</span>₾ income: <button class="buybutton" onclick="addprice(100,10000), pay(10000), updateearn()">10000₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>150</span>₾ income: <button class="buybutton" onclick="addprice(150,18000), pay(18000), updateearn()">18000₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>200</span>₾ income: <button class="buybutton" onclick="addprice(200,20000), pay(20000), updateearn()">20000₾</button></li>
+                    <li class="proudcts-ul-li">Buy <span>400</span>₾ income: <button class="buybutton" onclick="addprice(400,40000), pay(40000), updateearn()">40000₾</button></li>
+                </ul>
+                <button onclick="closeupgrade()" class="button-x">Close Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
